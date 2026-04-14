@@ -63,13 +63,13 @@ class BankAccount:   #Parent class
             print('Insufficient balance')
         return self
 class SavingBankAccount(BankAccount):
-    def __init__(self, /, cname, acctno, balance):
+    def __init__(self, cname, acctno, balance):
         super().__init__(cname, acctno, balance)
     def account_info(self):
         print('Saving Bank customer details')
         return self
 class CurrentBankAccount(BankAccount):
-    def __init__(self, /, cname, acctno, balance):
+    def __init__(self,cname, acctno, balance):
         super().__init__(cname, acctno, balance)
     def account_info(self):
         print('Current Bank customer details')
