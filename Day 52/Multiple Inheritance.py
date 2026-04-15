@@ -104,7 +104,7 @@ class PersonalDetails:
         print('Name:',self.name)
 class JobDetails:
     def set_salary(self,salary):
-        self.set_salary=salary
+        self.salary=salary
     def show_salary(self):
         print("Salary:",self.salary)
 class Employee(PersonalDetails,JobDetails):
